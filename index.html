@@ -1,0 +1,47 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Cropper</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/cropperjs@1.5.12/dist/cropper.css" />
+    <script src="https://unpkg.com/cropperjs@1.5.12/dist/cropper.js" defer></script>
+    <script src="/js/index.js" defer></script>
+    <script src="/js/app.js" type="module" defer></script>
+  </head>
+  <body>
+    <section class="container">
+      <div class="modal_overlay"></div>
+      <h1>Crop Image</h1>
+      <main class="main">
+        <form>
+          <input type="file" accept="image/*" class="new_image" />
+        </form>
+        <p class="reply"></p>
+        <div class="loader">
+          <div class="spinner-3"></div>
+        </div>
+        <section class="preview_image_container">
+          <div class="actions">
+            <button class="save">Save</button>
+            <button class="edit hide">Edit</button>
+          </div>
+          <hr />
+          <div class="image_preview_container">
+            <div class="image_border">
+              <div class="crop_container">
+                <img src="" alt="" id="preview_image" />
+              </div>
+            </div>
+            <div class="cropped_image_container hide">
+              <img src="" alt="" id="cropped_image_preview" />
+            </div>
+          </div>
+          <div class="actions download_actions">
+            <a href="#" class="download hide">Download</a>
+          </div>
+        </section>
+      </main>
+    </section>
+  </body>
+</html>
